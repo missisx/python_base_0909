@@ -35,10 +35,13 @@ while True:
         continue
     else:
         break
-my_dict = {"название": list(), "цена": list(), "количество": list(), "ед": list()}
-print(item)
-for i in range(3):
-    for part in range(item):
-        my_dict
+print(goods)
+my_dict = {"название": set(), "цена": set(), "количество": set(), "ед": set()}
+my_list = ["название", "цена", "количество", "ед"]
 
+for i in my_list:
+    for part in range(item):
+        print(goods[part][1].get(i))
+        my_dict.get(i).add(goods[part][1].get(i))
+        print(my_dict)
 
