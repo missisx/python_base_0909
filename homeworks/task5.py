@@ -10,14 +10,16 @@
 
 my_list = [7, 5, 3, 3, 2]
 
-while True:
-    num = int(input ("Введите число - элемент рейтинга'"))
-   # my_list.append(num);
-
-    pos = my_list.index(num)
-    my_list.insert(pos, num)
-    print(my_list)
-    if ():
-        break;
-
+#while True:
+num = int(input ("Введите число - элемент рейтинга\n"))
+if my_list[len(my_list)-1] > num:
+    my_list.append(num)
+pos=0
+for item in my_list:
+    if item < num:
+        pos = my_list.index(item)
+        my_list.insert(pos, num)
+        break
+    else:
+            continue
 print(my_list)

@@ -18,3 +18,27 @@
 # “количество”: [5, 2, 7],
 # “ед”: [“шт.”]
 # }
+
+goods = list()
+item = 0
+while True:
+    name = str(input ("Введите название товара\n"))
+    price = str(input("Введите цену товара\n"))
+    quantity = str(input("Введите кол-во товара\n"))
+    measurement = str(input("Введите единицу измерения товара\n"))
+    good = [item, {"название": name, "цена": price, "количество": quantity, "ед": measurement}]
+    goods.append(good)
+    item += 1
+    print(goods)
+    a = input("Если больше товаров вносить в список не нужно, нажмите Enter. Для продолжения введите любое число\n")
+    if (len(a)):
+        continue
+    else:
+        break
+my_dict = {"название": list(), "цена": list(), "количество": list(), "ед": list()}
+print(item)
+for i in range(3):
+    for part in range(item):
+        my_dict
+
+
